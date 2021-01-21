@@ -1,0 +1,27 @@
+<div id="idOnHTML" #idContainer class="image-gallery-2">
+    <div class="image-container"></div>
+    <div class="inline-icon">
+        <div>
+            <a class="image-viewer-tooltip" >
+            </a>
+        </div>
+        <div *ngIf="showOptions" class="options-image-viewer">
+            <a class="image-viewer-tooltip" *ngIf="zoomInButton"
+               (click)="zoomIn()" 
+               (mouseover)="atualizarCorHoverIn($event)"
+               (mouseout)="atualizarCorHoverOut($event)">               
+                <i class="material-icons footer-icon">zoom_in</i>
+            </a>
+            <a class="image-viewer-tooltip"
+               *ngIf="zoomOutButton"
+               (click)="zoomOut()" 
+               (mouseover)="atualizarCorHoverIn($event)"
+               (mouseout)="atualizarCorHoverOut($event)">               
+                <i class="material-icons footer-icon">zoom_out</i>
+            </a>
+        </div>
+    </div>
+    <div class="footer-info">
+        <span id="current"></span>/<span class="total"></span>
+    </div>
+</div>
