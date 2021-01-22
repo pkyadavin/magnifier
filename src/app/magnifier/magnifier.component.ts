@@ -9,20 +9,13 @@ import {
     Renderer2,
     SimpleChanges
 } from '@angular/core';
-
  
 import {FullScreenViewer,ImageViewer} from 'iv-viewer';
 
-/**
- * @author Breno Prata - 22/12/2017
- */
 @Component({
 
     selector: 'app-magnifier',
-
-    templateUrl: './magnifier.component.html',
-
-    styleUrls: ['./magnifier.component.scss']
+    templateUrl: './magnifier.component.html' 
 })
 export class MagnifierComponent implements OnChanges, OnInit, AfterViewInit {
 
