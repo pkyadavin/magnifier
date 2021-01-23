@@ -15,7 +15,7 @@ import {FullScreenViewer,ImageViewer} from 'iv-viewer';
 
 @Component({
 
-    selector: 'app-magnifier',
+    selector: 'magnifier',
     templateUrl: './magnifier.component.html' ,
     styleUrls: ['./magnifier.component.scss'],
     encapsulation: ViewEncapsulation.None   
