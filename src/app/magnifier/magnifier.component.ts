@@ -7,7 +7,8 @@ import {
     OnInit,
     Output,
     Renderer2,
-    SimpleChanges
+    SimpleChanges,
+    ViewEncapsulation
 } from '@angular/core';
  
 import {FullScreenViewer,ImageViewer} from 'iv-viewer';
@@ -15,7 +16,10 @@ import {FullScreenViewer,ImageViewer} from 'iv-viewer';
 @Component({
 
     selector: 'app-magnifier',
-    templateUrl: './magnifier.component.html' 
+    templateUrl: './magnifier.component.html' ,
+    styleUrls: ['./magnifier.component.scss'],
+    encapsulation: ViewEncapsulation.None   
+    
 })
 export class MagnifierComponent implements OnChanges, OnInit, AfterViewInit {
 
